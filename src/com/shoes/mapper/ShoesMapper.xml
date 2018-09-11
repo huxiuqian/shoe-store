@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shoes.mapper.ShoesMapper">
+	<select id="findAll" resultType="com.shoes.pojo.ShoeTypeBrand">
+		select * from shoes s,types t,brands b where s.stid=t.tid and s.sbid=b.bid
+	</select>
+	<select id="selectPage" parameterType="com.shoes.plugin.interceptor.Page" resultType="com.shoes.pojo.ShoeTypeBrand">
+		select * from shoes s,types t,brands b where s.stid=t.tid and s.sbid=b.bid
+	</select>
+	
+	<select id="findPage" parameterType="com.shoes.plugin.interceptor.Page" resultType="com.shoes.pojo.TypeSpBrand">
+		select * from spcify_shoes s,types t,brands b where s.sp_tid=t.tid and s.sp_bid=b.bid
+	</select>
+	<!-- 
+	<delete id="deleteSpShoe" parameterType="int">
+		delete from spcify_shoes where spsid=#{spsid}
+	</delete> -->
+	
+	<insert id="addShoes" parameterType="com.shoes.pojo.Shoes" keyProperty="id" useGeneratedKeys="true">
+		insert into shoes (stid,sbid,snum,sname,sprices,sproducer,sgender,scolor,sinfo,stimessold,sdetail,sintegral, simage) values (#{stid},#{sbid},#{snum},#{sname},#{sprices},#{sproducer},#{sgender},#{scolor},#{sinfo},#{stimessold},#{sdetail},#{sintegral}, #{simage})
+	</insert>
+</mapper>

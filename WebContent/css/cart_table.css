@@ -1,0 +1,147 @@
+
+body{
+	margin:0px;
+	padding:0px; 
+	font-family:"微软雅黑"; 
+	font-size:13px;
+}
+  
+	 
+#cart_container
+{ 
+	width:97%; 
+	margin:10px auto;
+	padding:7px;
+	text-align:center;
+	vertical-align:top; 
+}
+#form_cart
+{ 
+}
+ /* 现在购买*/
+#buyNow
+{
+	font-family:"微软雅黑";  
+	height:21px;
+	color:#666; 
+}   
+
+ /* 清空购物车*/
+#cleanCart
+{
+	font-family:"微软雅黑";  
+	height:25px;
+	color:#666; 
+}   
+/*继续购物*/
+ #goonShooping
+{
+	font-family:"微软雅黑";   
+	width:95px;
+	color:#666;  
+}   
+	 
+.cart_detail_table{
+	width:100%;
+	border-bottom:5px solid #f5ead1;
+	border-left:5px solid #f5ead1;
+	border-right:5px solid #f5ead1;
+}
+  
+ /*这个标题指的是 清空购物车 继续购物  去结算 三个按钮*/
+#cart_table_title
+{
+	width:100%;
+	height:45px;  
+}
+#cart_table_title td
+{
+	width:50%;
+	vertical-align:top;
+}
+
+
+
+
+/* table的标题  这个才是真正的标题--------------- */
+/* id */
+.title_id
+{
+	width:90px; 
+}
+/*商品名称*/ 
+.title_name
+{  
+}
+/*商品价格*/
+.title_price{
+	width:100px; 
+}
+/*商品数量*/
+.title_quantity{ 
+	width:100px; 
+}
+/*赠送积分*/
+.title_score{
+	width:90px; 
+
+}
+/*操作*/ 
+.title_operation{
+	width:80px; 
+}
+/* table的标题结束---------------- */
+				  
+				 
+.style_total_price {
+	font-weight: bold;
+	font-size:18px;
+	color:#FF9933;
+}
+ 
+
+/*  每种商品的详细信息 */
+
+.product_info_tr{
+	height:40px;  
+	vertical-align:bottom;
+	border-bottom:1px dashed #fff;
+	padding-bottom:3px;
+}
+
+/* 数量加减 */
+.quantity_desc , .quantity_insc 
+{
+	text-align:center;
+	vertical-align:middle;
+} 
+/* 加减用的那个左右按钮图片*/
+.quantity_desc  img
+{ 
+	border:#F90 1px dotted; 
+	width:9px;
+	height:9px; 
+}  
+
+.quantity_insc img
+{
+	border:#F90 1px dotted; 
+	width:9px;
+	height:9px; 
+} 
+
+/*数量*/
+.quantity{
+	align:center;
+	vertical-align:middle;
+	width:25px;
+	height:20px; 
+}  
+/*数量的输入框*/
+.quantity input{ 
+	height:13px;
+	width:28px;
+	text-align:center;
+	font-family:"Courier New", Courier, monospace;
+	color:#4D3000;
+}

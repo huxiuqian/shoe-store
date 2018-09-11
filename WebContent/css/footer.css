@@ -1,0 +1,280 @@
+body {
+	margin:0 auto;
+	padding:0;
+	text-align:center;
+}
+td {
+	word-break:break-all;
+}
+#join_us {
+	background-image:url(../images/footer/join_us.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	height:66px;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+#join_us_pic {
+}
+#align_split {
+	background-image:url(../images/footer/align_split.png);
+	background-repeat:no-repeat;
+	width:100%;
+	background-position:center;
+	height:8px;
+}
+#small_intr {
+	width:1000px;
+	background-image:url(../images/footer/footer_bg1.gif);
+	height:130px;
+	padding:10px 0;
+	border-left:1px solid #dbc391;
+	border-right:1px solid #dbc391;
+}
+.small_intr_container {
+	padding:0 10px;
+}
+.small_intr_table {
+	border:1px solid #dbc391;
+	background-color:#fdf7ea;
+	width:220px;
+	height:60px;
+	text-align:center;
+}
+.small_intr_title {
+	background-image:url(../images/footer/small_introduction_title_bg.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	text-align:center;
+	font:"幼圆";
+	color:#e4701e;
+	font-size:16px;
+	padding-top:10px;
+	height:15px;
+}
+.small_intr_pic { 
+	vertical-align:middle;　
+}
+.small_intr_words {
+	text-align:left;
+	width:150; 
+	padding-left:5px;
+}
+#contact_us {
+	background-image:url(../images/footer/contactUs.png);
+	background-repeat:no-repeat;
+	width:1033px;
+	height:66px;
+}
+#adv_div {
+	width:1000px;
+	margin:0;
+	padding:0;
+	border:#dbc391 1px solid;
+	background-color:#fdf7ea;
+	text-align:left;
+	vertical-align:top;
+}
+#adv_table {
+	border:0px; 
+	margin-top:10px; 
+	width:220px; 
+	height:200px;
+}
+#adv_table .adv_title {
+	height:20px;
+	background-image:url(../images/footer/adv_left.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+	overflow:hidden;
+	border:0;
+	margin:0;
+	padding-top:5px ;
+	text-align:center;  
+	font-size:17px;
+	font-family:"幼圆";
+	vertical-align:top;
+	color:#FFEFDF
+}
+#adv_table .adv_words {
+	word-break:break-all; 
+	padding-right:20px;
+	height:60px;
+	text-align:left;
+	padding-left:50px;
+	padding-top:0;
+	margin-top:0 auto;
+	vertical-align:top;
+	color:#CD9F01;
+}
+ 
+#adv_table .adv_words a {
+	text-decoration:none;
+	color:#CD9F01;
+}
+#adv_div_right_container {
+	background-image:url(../images/footer/footer_bg2.gif);
+	background-repeat:repeat-y;
+	width:200px;
+	margin-right:20px;
+	vertical-align:top;
+}
+#adv_div_rightDiv {
+	margin:10px;
+	width:180;
+	height:100%;
+}
+#adv_div_rightDiv .adv_right_title {
+	text-align:center;
+	font:"幼圆";
+	font-size:18px;
+	color:#e4701e;
+	height:30px;
+	border-bottom:1px dashed #e4701e;
+}
+#adv_div_rightDiv .adv_right_words {
+	font:"迷你简中倩","微软雅黑","幼圆";
+	font-size:13px;
+	color:#7d5a3f;
+	word-break:break-all;
+	text-align:left;
+	margin-top:10px;
+	padding-left:5px;
+	vertical-align:top;
+}
+/* --------------------------联盟商家的列表------------------------------*/
+#list_co_container {
+	padding:0 20px;
+	width:730px;
+}
+#list_co_div {
+	border-top:1px solid #dbc391;
+	padding:10px 0 0 0;
+	vertical-align:top;
+	text-align:left;
+	height:300px ; 
+}
+#list_co_table {
+	border:0px;
+	text-align:left;
+	vertical-align:top;
+	margin-bottom:50px;
+}
+#list_co_table td {
+	text-align:left;
+	vertical-align:top;
+}
+#list_co_table ul {
+}
+#list_co_table ul li {
+	border-bottom:1px dashed #cbc5b9;
+	width:300px;
+	margin-top:10px;
+}
+#list_co_table ul li a {
+	padding:0 10px;
+	display: block;
+	text-decoration:none;
+	color:#644329;
+}
+#list_co_table ul li a:hover { /*--Hover effect for subnav links--*/
+	background-color:#FFFFFF;
+}
+#quicklinkGoodPic {
+	width:134px;
+}
+#quicklinkList {
+	text-align:left; 
+}
+/*-------------2----------------*/
+#quicklinkhedding {
+	float:left;
+	margin-top: 0;
+	margin-left:25px;
+	padding:0px;
+	color:#777232;
+	font-family:"幼圆";
+	width:430px;
+}
+#quicklinkblank { 
+	float:left;
+	width:430px;
+	float:left;
+	margin-top:20px; 
+	padding:0px; 
+}
+
+#quicklinktxt1{
+	width:400px;
+	height:26px; 
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+#quicklinktxt2 {
+	width:400px;
+	height:26px;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+#quicklinktxt3 {
+	width:400px;
+	height:26px;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+#quicklinktxt4 {
+	width:400px;
+	height:26px;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+#quicklinktxt5 {
+	width:400px;
+	height:26px;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.quicklink {
+	width:400px;
+	height:26px;
+	float:left;
+	margin:0px;
+	padding:4px 0 0 15px;
+	font-family:Tahoma;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-decoration:none;
+	background-image: url(../images/footer/quicklink_over.jpg);
+	background-repeat:no-repeat;
+}
+.quicklink:hover {
+	width:400px;
+	height:26px;
+	float:left;
+	margin:0px;
+	padding:4px 0 0 15px;
+	font-family:Tahoma;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-decoration:none;
+	background-image:url(../images/footer/quicklink_active.jpg);
+	background-repeat:no-repeat;
+}
+
+#quicklinkListPic
+{ 
+	margin-top:100px;  
+	width:130px;
+	height:130px;
+	text-align:left;
+	padding-left:0px;
+	
+}

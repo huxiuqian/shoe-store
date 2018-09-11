@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shoes.mapper.AdminMapper">
+	<select id="login" parameterType="com.shoes.pojo.Admin" resultType="com.shoes.pojo.Admin">
+		select * from admins where acount=#{acount} and apwd=#{apwd}
+	</select>
+	<insert id="add" parameterType="com.shoes.pojo.Admin" keyProperty="id" useGeneratedKeys="true">
+		insert into admins (acount,apwd,aremarks,a_pcid) values (#{acount},#{apwd},#{aremarks},#{a_pcid})
+	</insert>
+	<select id="findByAcount" parameterType="String" resultType="com.shoes.pojo.Admin">
+		select * from admins where acount=#{acount}
+	</select>
+	<update id="modifyAdmin" parameterType="com.shoes.pojo.Admin">
+		update admins set acount=#{acount}, apwd=#{apwd}, a_pcid=#{a_pcid} where aid=#{aid}
+	</update>
+	<select id="findAll" resultType="com.shoes.pojo.Admin">
+		select * from admins;
+	</select>
+	
+	<select id="selectPage" parameterType="com.shoes.plugin.interceptor.Page" resultType="com.shoes.pojo.Admin">
+		select * from admins
+	</select>
+	
+	<select id="findByAid" parameterType="int" resultType="com.shoes.pojo.Admin">
+		select * from admins where aid=#{aid}
+	</select>
+	
+	<delete id="deleteAdmin" parameterType="int">
+		delete from admins where aid=#{aid}
+	</delete>
+</mapper>

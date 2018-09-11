@@ -1,0 +1,40 @@
+
+body{
+	margin:0px;
+	padding:0px;  
+	background-color:#f5ead1;
+}
+
+a{
+	text-decoration:none;
+}
+a img
+{
+	border:none;
+}
+.main {
+	width:1000px;
+	height:auto;
+	margin:0px auto;
+	text-align:center;
+	background-color:#FFFFFF;
+	border-left:1px solid #dbc391;
+	border-right:1px solid #dbc391;
+	vertical-align:top;
+}
+table
+{
+	cellspacing:0px;
+	border-collapse:collapse;
+}
+
+td
+{
+	word-break:break-all ; 
+}
+
+
+
+
+
+

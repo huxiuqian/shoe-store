@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shoes.mapper.TypeMapper">
+	<select id="findTypePage" parameterType="com.shoes.plugin.interceptor.Page" resultType="com.shoes.pojo.Type">
+		select * from types
+	</select>
+	
+	<select id="findByTid" parameterType="int" resultType="com.shoes.pojo.Type">
+		select * from types where tid=#{tid}
+	</select>
+	
+	<update id="modifyType" parameterType="com.shoes.pojo.Type">
+		update types set tname=#{tname},tremarks=#{tremarks}, tdelete=#{tdelete} where tid=#{tid}
+	</update>
+	
+	<insert id="addType" parameterType="com.shoes.pojo.Type">
+		insert into types (tname,tremarks,tdelete) values (#{tname}, #{tremarks}, #{tdelete})
+	</insert>
+</mapper>

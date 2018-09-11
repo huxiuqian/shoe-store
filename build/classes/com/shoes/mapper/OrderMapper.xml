@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shoes.mapper.OrderMapper">
+	<select id="findOrderPage" parameterType="com.shoes.plugin.interceptor.Page" resultType="com.shoes.pojo.UserOrder">
+		select * from orders o, users u where u.uid = o.ouid
+	</select>
+	
+	<select id="findSpcifyOrderPage" parameterType="com.shoes.plugin.interceptor.Page" resultType="com.shoes.pojo.SpcifyShoeOrderResult">
+		select * from orders o, spcify_shoes ss, spcify_results sr where sr.sp_sid = ss.spsid and sr.sp_oid = o.oid
+	</select>
+	
+	<select id="findBySprid" parameterType="int" resultType="com.shoes.pojo.SpcifyShoeOrderResult">
+		select * from orders o, spcify_shoes ss, spcify_results sr where sr.sp_sid = ss.spsid and sr.sp_oid = o.oid and sprid=#{sprid} 
+	</select>
+</mapper>

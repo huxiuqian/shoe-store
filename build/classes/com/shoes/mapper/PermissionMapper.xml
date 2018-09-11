@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shoes.mapper.PermissionMapper">
+	<select id="findAllPermission" resultType="com.shoes.pojo.Permission">
+		select * from permission
+	</select>
+	
+	<select id="findByPerid" parameterType="int" resultType="com.shoes.pojo.Permission">
+		select * from permission where perid=#{perid}
+	</select>
+	
+	<update id="modifyPermission" parameterType="com.shoes.pojo.Permission">
+		update permission set pername=#{pername}, percont=#{pername},peremarks=#{peremarks} where perid=#{perid}
+	</update>
+	
+	<delete id="deletePermission" parameterType="int">
+		delete from permission where perid=#{perid}
+	</delete>
+	
+	<insert id="addPermission" parameterType="com.shoes.pojo.Permission">
+		insert into permission (pername,percont, peremarks) values (#{pername},#{percont},#{peremarks})
+	</insert>
+	
+	<select id="findByPername" parameterType="String" resultType="com.shoes.pojo.Permission">
+		select * from permission where pername=#{pername}
+	</select>
+	
+	<select id="selectPage" parameterType="com.shoes.plugin.interceptor.Page" resultType="com.shoes.pojo.Permission">
+		select * from permission
+	</select>
+</mapper>

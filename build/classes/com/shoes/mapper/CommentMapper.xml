@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shoes.mapper.CommentMapper">
+	<select id="selectPage" parameterType="com.shoes.plugin.interceptor.Page" resultType="com.shoes.pojo.ShoesUserComment">
+		select * from shoes s, users u, comments c where s.sid = c.c_sid and u.uid = c_uid
+	</select>
+	
+	<select id="findQuestion" parameterType="com.shoes.plugin.interceptor.Page" resultType="com.shoes.pojo.ShoesQuestionAnswer">
+		select * from shoes s, shoes_inquirys si where s.sid= si.sq_sid
+	</select>
+	<select id="findBySqid" parameterType="int" resultType="com.shoes.pojo.ShoesQuestionAnswer">
+		select * from shoes s, shoes_inquirys si where s.sid= si.sq_sid and sqid=#{sqid}
+	</select>
+	<update id="addAnswer" parameterType="com.shoes.pojo.ShoesQuestionAnswer">
+		update shoes_inquirys set sqanswer=#{sqanswer} where sqid=#{sqid}
+	</update>
+	
+	<delete id="deleteComment" parameterType="int">
+		delete from comments where cid=#{cid} 
+	</delete>
+</mapper>

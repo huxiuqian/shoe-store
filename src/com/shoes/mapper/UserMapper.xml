@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shoes.mapper.UserMapper">
+	<select id="login" parameterType="com.shoes.pojo.User" resultType="com.shoes.pojo.User">
+		select * from users where uaccount=#{uaccount} and upwd = #{upwd}
+	</select>
+	<select id="findByUaccount" parameterType="String" resultType="com.shoes.pojo.User">
+		select * from users where uaccount=#{uaccount}
+	</select>
+	<insert id="register" parameterType="com.shoes.pojo.User" keyProperty="id" useGeneratedKeys="true">
+		insert into users (uaccount,uname,upwd,uemail,utel,ugender) values (#{uaccount},#{uname},#{upwd},#{uemail},#{utel},#{ugender})
+	</insert>
+	<select id="findAllUser" resultType="com.shoes.pojo.User">
+		select * from users
+	</select>
+	<select id="findByUid" parameterType="int" resultType="com.shoes.pojo.User">
+		select * from users where uid=#{uid}
+	</select>
+	
+	<update id="modifyUser" parameterType="com.shoes.pojo.User">
+		update users set uaccount=#{uaccount}, upwd=#{upwd},uname=#{uname},utel=#{utel},ugender=#{ugender},uemail=#{uemail},uintegral=#{uintegral} where uid=#{uid}
+	</update>
+	
+	<delete id="deleteUser" parameterType="int">
+		delete from user where uid=#{uid}
+	</delete>
+	
+	<select id="selectPage" parameterType="com.shoes.plugin.interceptor.Page" resultType="com.shoes.pojo.User">
+		select * from users
+	</select>
+</mapper>

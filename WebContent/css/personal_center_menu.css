@@ -1,0 +1,73 @@
+body
+{
+	background-color:#fdf7ea; 
+}
+
+a{ text-decoration:none; color:#FFF;}
+.menu_body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  margin:0px;
+  padding:0;
+  border:5px #FFE1B0 dotted; 
+}
+
+p {
+  line-height: 1.5em;
+}
+
+#personal_center_menu_top
+{
+	background-image:url(../images/personal_center/personal_center_menu/menu_top.gif); 
+	font-size:24px;
+	height:30px; 
+  	width:130px;
+	font-family: "微软雅黑"; 
+	vertical-align:bottom; 
+	text-align:left;
+	padding:10px 0 5px 10px;
+}
+ 
+ul#menu, ul#menu ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  	width:140px;
+}
+
+ul#menu a {
+  display: block;
+  text-decoration: none;	
+}
+
+ul#menu li {
+  margin-top: 1px;
+}
+
+ul#menu li a {
+  background: #b18c72;
+  color:#FFF;	
+  padding: 0.5em;
+}
+
+ul#menu li a:hover {
+  background: #554236;
+}
+
+ul#menu li ul li a {
+  background: #d9d2cd;
+  color:#000;
+  padding-left: 20px;
+}
+
+ul#menu li ul li a:hover {
+  background: #aaa;
+  border-left: 5px #554236 solid;
+  padding-left: 15px;
+}
+
+.code { border: 1px solid #d9d2cd; list-style-type: decimal-leading-zero; padding: 5px; margin: 0; }
+.code code { display: block; padding: 3px; margin-bottom: 0; }
+.code li { background: #686868; border: 1px solid #d9d2cd; margin: 0 0 2px 2.2em; }
+.indent1 { padding-left: 1em; }
+.indent2 { padding-left: 2em; }

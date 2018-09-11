@@ -1,0 +1,47 @@
+#regist_table
+{
+	width:700px;
+	margin:0 	auto;
+}
+
+
+#regist_table  .span
+{ 
+	font:'幼圆'; 
+	font-size:14px;
+	text-align:left; 
+	color:#999; 
+} 
+
+#regist_table  .a
+{ 
+	font:'幼圆'; 
+	font-size:14px;
+	text-align:left;
+	width:670px; 
+	text-decoration:none;
+	color:#F90;
+} 
+
+
+.grayColor {  color: #666666; font-family: "微软雅黑";}  
+.BrownColor {
+	color: #996666;
+	text-align:left;
+	margin-left:10px;
+	font-size: 13px;
+}
+ 
+/* 对于下拉框和单选按钮，需要上下留白以免显得过于拥挤*/  
+.seclecStyle{margin:4px  0px;}
+
+.linput {
+	BORDER: #ccc 2px solid;  
+	padding-top:8px;
+	padding-left: 5px;
+	vertical-align:bottom;
+	WIDTH: 200px;  
+	HEIGHT: 25px; 
+	COLOR: #666; 
+	FONT-SIZE: 15px; 
+}

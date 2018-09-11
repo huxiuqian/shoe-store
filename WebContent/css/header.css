@@ -1,0 +1,223 @@
+a img
+{
+	border:none;
+} 
+
+
+#menu_bar{
+	width:100%;
+	height:30px;
+	color:#f0d69f;
+	background-color:#99887c;
+	font:Arial;  
+}
+
+#menu_bar ul{
+	margin:0px;
+	float:right;
+	list-style:none; 
+	font-size: 16px
+}
+
+#menu_bar ul li{
+	float:left;
+	line-height:30px;
+	margin:0px 10px  0px 0px;  
+	list-style-image:url(../images/header/sliper.gif);
+	font-size: 13px
+}
+#menu_bar .firstitem{
+	list-style-image:none; 
+}
+   
+#menu_bar a
+{
+	color:#f0d69f; 
+	text-decoration:none;
+}
+/*-----------------------提示条-----------------------*/ 
+.tooltip {
+width:250px; 
+position: absolute; 
+left:-300px;
+top:-200px;
+/*
+height:0px;
+*/
+}
+.tooltip p {
+color:#999;
+width:95%;
+height:80%;
+font:"幼圆";
+font-size:12px;
+background-color:#FFF2CA; 
+border:5px solid #E0DCCF;
+padding:5px 0 5px 5px;
+margin: 0;
+}
+
+
+.logotip {
+width:120px; 
+position: absolute; 
+left:-300px;
+top:-200px;
+/*
+height:0px;
+*/
+}
+.logotip p {
+	color:#999;
+	width:95%;
+	height:80%;
+	font:"幼圆";
+	font-size:12px;
+	background-color:#FFF2D7; 
+	padding:5px 0 5px 5px;
+	margin: 0;
+}
+/*--------------------搜索条----------------*/
+#search_container
+{
+	 width:460px; 
+	 height:45px;
+	 background-image:url(../images/header/search_bg1.gif); 
+}
+#searchBar a img
+{
+	border::none;
+}
+input,button{
+	margin:0; 
+	padding:0 0 0 15px;
+	font-size:16px;
+	vertical-align:bottom;
+}
+  
+ 
+#searchBar{  
+	height:30px;
+	width:440px; 
+	background-color:#446b74;
+	border:2px solid #dbc391; 
+	vertical-align:top;
+	margin: 0 0 0 10px;
+} 
+
+.search_condition
+{
+	width:315px; 
+	height:100%;
+	background-image:url(../images/header/search_bg2.gif);
+	background-position:left;
+	background-repeat:repeat-y;
+	vertical-align:top;
+	border:2px solid #446b74;
+	border-right:0px;
+	margin:0;
+	padding:8px 0 0 5px;
+	font-size:13px;
+	color:#6F4200; 
+	
+}
+
+#search_type
+{ 
+	width:60px; 
+	height:100%; 
+	border:none; 
+	background-color:#f5f3ef; 
+	text-align:right;
+	vertical-align:top;
+	border:0;
+	padding:0;
+	margin:0;
+}
+.search_btn
+{
+	vertical-align:top; 
+	border:0; 
+	margin:0; 
+	padding:0;
+}
+
+#btn
+{
+	background-image:url(../images/header/search_btb1.gif);
+	background-position:left top;
+	border:0px;
+	background-repeat:no-repeat; 
+	height:30px;
+	width:30px;}
+/*-----------------这个是顶端的 个人中心下拉的样式表------------------------*/
+  
+ul.topnav { 
+	padding: 0;
+	margin:0; 
+}
+ul.topnav li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	position:relative; /*--Declare X and Y axis base for sub navigation--*/
+	display: inline;
+}
+ul.topnav li a {  
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	float: left;
+}
+ul.topnav li a:hover {
+	-moz-border-radius: 3px; /*--CSS3 Rounded Corners--*/
+	-khtml-border-radius: 3px; /*--CSS3 Rounded Corners--*/
+	-webkit-border-radius: 3px; /*--CSS3 Rounded Corners--*/
+}
+ul.topnav li span { /*--Drop down trigger styles--*/
+	width: 15px;
+	height: 35px;
+	float: left;
+	background: url(../images/header/subnav_btn.gif) no-repeat center top;
+}
+ul.topnav li span.subhover { /*--Hover effect for trigger--*/
+    background-position: center bottom; cursor: pointer;
+}   
+ul.topnav li ul.subnav { 
+	width: 80px;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	left: 0; top: 25px;
+	background:#a9a09a;
+	margin: 0; padding: 0;
+	display: none;
+	float: left;
+	border: 1px solid #111;
+}
+ul.topnav li ul.subnav li{
+	width: 80px;
+	margin: 0; padding: 0;
+	border-top: 1px solid #a9a09a; /*--Create bevel effect--*/
+	border-bottom: 1px solid #444; /*--Create bevel effect--*/
+	clear: both;
+}
+html ul.topnav li ul.subnav li a {
+	width: 80px;
+	float: left;
+	background-color: #594a40; 
+	font-size: 0.9em;
+}
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+	background-color: #827267;
+}
+ 
+
+/*------------------------底端---------------------*/
+#header_buttom_bar
+{
+	text-align:center; 
+	width:100%;
+	height:30px;
+	background-image:url(images/header/top_menu_btmBar.gif); 
+	background-position:center; 
+	background-repeat:no-repeat;
+}

@@ -1,0 +1,75 @@
+body {
+	color:#666666;
+	font-family:"微软雅黑";
+	font-size:14px;
+	background-color:#fefbf1;
+	
+}
+.STYLE1 {
+	color: #CC3300
+}
+
+.text {
+	color: #666666;
+	font-family: "微软雅黑";
+	text-align:right;
+	margin-right: 50px;
+}
+ 
+.linput {
+	BORDER: #ccc 2px solid;
+	WIDTH: 200px;
+	HEIGHT: 30px;
+	COLOR: #666;
+	FONT-SIZE: 14px;
+	PADDING-TOP: 0px 5px;
+}
+#recreceiver {
+	BORDER: #ccc 2px solid;
+	WIDTH: 195px;
+	HEIGHT: 30px;
+	COLOR: #666;
+	FONT-SIZE: 14px;
+	PADDING-TOP: 0px 5px;
+	
+}
+#recprovince {
+	BORDER: #ccc 2px solid;
+	WIDTH: 95px;
+	HEIGHT: 30px;
+	COLOR: #666;
+	FONT-SIZE: 14px;
+	PADDING-TOP: 0px 5px;
+}
+#reccity {
+	BORDER: #ccc 2px solid;
+	WIDTH: 63px;
+	HEIGHT: 30px;
+	COLOR: #666;
+	FONT-SIZE: 14px;
+	PADDING-TOP: 0px 5px;
+}
+#recdistrict {
+	BORDER: #ccc 2px solid;
+	WIDTH: 75px;
+	HEIGHT: 30px;
+	COLOR: #666;
+	FONT-SIZE: 14px;
+	PADDING-TOP: 0px 5px;
+}
+#recstreet {
+	width: 319px;
+	BORDER: #ccc 2px solid;
+	HEIGHT: 30px;
+	COLOR: #666;
+	FONT-SIZE: 14px;
+	PADDING-TOP: 0px 5px;
+}
+#recpostcode {
+	BORDER: #ccc 2px solid;
+	width: 95px;
+	HEIGHT: 30px;
+	COLOR: #666;
+	FONT-SIZE: 14px;
+	PADDING-TOP: 0px 5px;
+}

@@ -1,0 +1,67 @@
+
+#main {
+	width:1000px;
+	height:auto;
+	margin:0px auto;
+	margin-top:0;
+	text-align:center; 
+	border-left:1px solid #dbc391;
+	border-right:1px solid #dbc391;
+	vertical-align:top;
+	background-color:#fdf7ea; 
+}
+#main .clip_container {
+	width:800px;
+	height:330px;
+	vertical-align:bottom;
+	background-image:url(../images/index/index_bg1.png);
+	padding:0;
+	margin:0 auto;
+	position:relative;
+}
+#main .clip_div {
+	position:absolute;
+	left:10px;
+	top:10px;
+	width:780px;
+	height:310px;
+	background-color:#fdf7ea; 
+	background-image:url(../images/index/index_clip1.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#main .brand_act_title {
+	background-color:#fdf7ea; 
+	width:800px;
+	height:44px;
+	background-image:url(../images/index/brand_actives.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	padding:0;
+	margin:0 auto; 
+}
+#main .brand_act_container {
+	width:800px;
+	height:270px;
+	background-image:url(../images/index/index_bg1.png);
+	background-color:#fdf7ea; 
+	position:relative;
+}
+#main .brand_act_div {
+	position:absolute;
+	left:10px;
+	top:10px;
+	background-color:#fdf7ea; 
+} 
+/**  热销产品展示 */
+
+.sales_best {
+	width:1000px;
+	height:50px;
+	background-color:#FFF;
+	background-image:url(../images/index/index_sales_best/title.gif);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	padding:0;
+	margin:0 auto;
+}

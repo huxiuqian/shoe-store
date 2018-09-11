@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shoes.mapper.BrandMapper">
+	<select id="findBrandPage" parameterType="com.shoes.plugin.interceptor.Page" resultType="com.shoes.pojo.Brand">
+		select * from brands
+	</select>
+	
+	<select id="findByBid" parameterType="int" resultType="com.shoes.pojo.Brand">
+		select * from brands where bid=#{bid}
+	</select>
+	
+	<update id="modifyBrand" parameterType="com.shoes.pojo.Brand">
+		update brands set bname=#{bname}, bsex=#{bsex}, bstate=#{bstate}, bremarks=#{bremarks}
+	</update>
+</mapper>

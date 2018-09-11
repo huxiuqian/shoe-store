@@ -1,0 +1,25 @@
+body
+{background:#fefbf1;}
+body,td,th {
+	font-size: 12px;
+}
+.tips {
+	font-size: 12px;
+	line-height: 25px;
+	color: #009900;
+}
+.linput {
+	BORDER-BOTTOM: #ccc 2px solid; 
+	BORDER-LEFT: #ccc 2px solid; 
+	PADDING-BOTTOM: 0px;  
+	PADDING-LEFT: 5px;
+	WIDTH: 200px;  
+	HEIGHT: 30px; COLOR: #666; 
+	FONT-SIZE: 14px; BORDER-TOP: #ccc 2px solid;
+	BORDER-RIGHT: #ccc 2px solid; PADDING-TOP: 0px;
+}  
+.grayColor {
+	color: #666666;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}  

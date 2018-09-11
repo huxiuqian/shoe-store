@@ -1,0 +1,16 @@
+1. 创建项目,导入SSM相关的Jar包
+
+
+2. 创建项目的结构
+
+3. 配置
+	springmvc.xml
+	applicationContext.xml
+	sqlMapConfig.xml
+	
+4. 配置web.xml
+	启动spring : 监听器
+	SpringMVC	:　DispatcherSerlvet
+	编码的设置	:　Filter
+	
+５．　配置SSM里需要的东西
